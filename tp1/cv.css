@@ -8,7 +8,7 @@ a:hover {
         background-color:orange;
       }
 tr:nth-child(odd){
-     background: sienna;
+     background: silver;
 }
 tr:hover {
      background-color: silver;
