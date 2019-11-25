@@ -1,0 +1,46 @@
+ospf network types :
+
+1 .  broadcast network : dr bdr 
+elect the dr bdr default hello interfavlz  10 sec dead times  *4 
+multicast is used to discover neighbors 
+neighbors are discovred  
+
+2 . ponit to point (ppp. hdlc) one adjacency no election for the dr and bdr 
+
+default hello interval  10  dead *4   
+
+3 . NBMA non broadcast (staticly configure the neighbors )  force the dr set ospf priority 
+ default hello interval  30 secenod   120 sec dead 
+
+4.  point to multipoint (each connection have seprate subnet) pvc  no need for dr ans bdr 
+
+-----------------------------------------------
+
+
+multicast  ip used for ospf : 224.0.0.5 all ospf routers 
+                              224.0.0.6  communication with dr and bdr 
+
+the hello protocel is used to elect the dr and bdr 
+ospf priority  0 - 255 
+ospf priority 0 it will not participate in the election 
+the default priority  is   1   (ip ospf priority  xx  )
+the highest router id is become the dr  (router id ) no preemption in ospf 
+the dr is elected fist then the bdr 
+
+
+
+the two routers shold agree in hello interval 
+
+
+
+for every ipv6 address   that we add to interface a corespanding mulicast   
+FF02::1:ff      to learn MAC adress to a corespanding to ipv6 adress 
+
+------------
+extended unique indentifier   use the mac for creating the ID-interface  in the ipv6 Addresse 
+
+MAC-EUI
+
+
+
+
